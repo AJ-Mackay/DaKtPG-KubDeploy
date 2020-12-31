@@ -64,7 +64,7 @@ spec:
           env:
             - name: MONGODB_CONNECTION_URI
               value: 'mongodb+srv://KubDepDemo:F6fooLgCiYQZe5Sx@cluster0.wh0pq.mongodb.net/users?retryWrites=true&w=majority'
-            - name: AUTH_API_ADDRESSS
+            - name: AUTH_API_ADDRESS
               value: 'auth-service.default:3000'
           volumeMounts:
             - name: efs-vol
