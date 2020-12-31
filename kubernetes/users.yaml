@@ -1,4 +1,4 @@
-kind: storageClass
+kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
   name: efs-sc
@@ -49,7 +49,7 @@ kind: Deployment
 metadata:
   name: users-deployment
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: users
@@ -71,5 +71,5 @@ spec:
               mountPath: /app/users
       volumes:
         - name: efs-vol
-          PersistentVolumeClaim:
+          persistentVolumeClaim:
             claimName: efs-pvc
