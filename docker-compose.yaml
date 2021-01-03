@@ -13,3 +13,5 @@ services:
     environment:
       MONGODB_CONNECTION_URI: 'mongodb+srv://KubDepDemo:F6fooLgCiYQZe5Sx@cluster0.wh0pq.mongodb.net/users?retryWrites=true&w=majority'
       AUTH_API_ADDRESS: 'auth:3000'
+
+# Adding comment to try new login details/SSH key
